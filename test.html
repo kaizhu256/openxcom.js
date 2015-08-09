@@ -29,36 +29,16 @@
   };
 </script>
 
-<script type="text/javascript" src="async.js"></script>
-<script type="text/javascript" src="canvas.js"></script>
-<script type="text/javascript" src="xcom.js"></script>
-<script type="text/javascript" src="api.js"></script>
+<script type="text/javascript" src="index.js"></script>
 
 <div class="canvas_container openxcom">
   <canvas id="canvas" oncontextmenu="event.preventDefault()"></canvas>
-  <div id="output" class="canvas_overlay">
-
-    <div class="click_to_start">
-      <span class="huge">Please click to start the game</span>
-      <span class="little"><b>NOTE:</b>&nbsp;Your browser may hang up during loading of the game, please be patient</span>
-    </div>
-
-    <div class="loader">
-      <div class="info">
-        <div id="status" class="status"></div>
-        <div id="progress" class="progressbar"></div>
-      </div>
-    </div>
-
-  </div>
 </div>
 
 <script type="text/javascript">
   Epicport.API = new Epicport.API({
     game: "openxcom",
-    arguments:
-["-useOpenGL", "false", "-asyncBlit", "false", "-vSyncForOpenGL", "false", "-useOpenGLSmoothing", "false", "-mute", "false", "-playIntro", "true", "-language", "en", "-displayWidth", "960", "-displayHeight", "600"]
-,
+    arguments: ["-useOpenGL", "false", "-asyncBlit", "false", "-vSyncForOpenGL", "false", "-useOpenGLSmoothing", "false", "-mute", "false", "-playIntro", "true", "-language", "en", "-displayWidth", "960", "-displayHeight", "600"],
     preRun:
       function () {
       //  Module['FS_createFolder']('/', 'home', true, true);
@@ -66,8 +46,7 @@
         Module['FS_createFolder']('/home/emscripten', '.openxcom', true, true);
         Module['FS_createFolder']('/home/emscripten', '.config', true, true);
         Module['FS_createFolder']('/home/emscripten/.config', '.openxcom', true, true);
-      }
-,
+      },
     js: 'openxcom.js'
   });
   var Module = Epicport.API.module();
