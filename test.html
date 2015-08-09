@@ -2,12 +2,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta name="csrf-token" content="331216ec-d84a-4f7a-b967-1e594360ffdf"/>
-
-<title>Online games / XCOM </title>
-
-<link type="image/vnd.microsoft.icon" rel="shortcut icon" href="/favicon.ico"/>
 <link type="text/css" rel="stylesheet" media="all" href="/css/960/reset.css"/>
 <link type="text/css" rel="stylesheet" media="all" href="/css/960/text.css"/>
 <link type="text/css" rel="stylesheet" media="all" href="/css/960/960.css"/>
@@ -16,15 +10,8 @@
 <link type="text/css" rel="stylesheet" media="all" href="/js/colorbox/colorbox.css"/>
 
 
-<link rel="alternate" hreflang="ru" lang="ru" href="/ru/xcom/browser"/>
-
-<meta name="author" content="Guryanov Aleksander" />
-<meta name="description" content="Browser version of classic game X-COM: UFO Defense. Here you can play online X-COM in your browser." />
-<meta name="keywords" content="ufo,xcom,browser,online,play,game" />
-
 <script type="text/javascript" src="/js/jquery-1.11.1.min.js"></script>
 <script type="text/javascript" src="/js/jquery-ui.min.js"></script>
-<script type="text/javascript" src="/js/jquery.cookie.js"></script>
 </head>
 <body>
 
@@ -40,26 +27,12 @@
     html_ok: "Ok",
     html_cancel: "Cancel",
   };
-
-  try {
-    var profile = $.cookie('profile');
-    if (profile) {
-      Epicport.profile = JSON.parse(profile);
-    }
-  } catch (e) {
-    Epicport.profile = undefined;
-  }
 </script>
 
 <script type="text/javascript" src="/js/async.js"></script>
-<script type="text/javascript" src="/js/core/dialog.js"></script>
-<script type="text/javascript" src="/js/core/login.js"></script>
 <script type="text/javascript" src="/js/core/navbar.js"></script>
 <script type="text/javascript" src="/js/game/canvas.js"></script>
 <script type="text/javascript" src="/js/game/xcom.js"></script>
-<script type="text/javascript" src="/js/game/dune2.js"></script>
-<script type="text/javascript" src="/js/game/ttd.js"></script>
-<script type="text/javascript" src="/js/game/caesaria.js"></script>
 <script type="text/javascript" src="/js/game/api.js"></script>
 <script>new Epicport.Navbar();</script>
 
@@ -131,26 +104,6 @@ function () {
   });
   var Module = Epicport.API.module();
 </script>
-    <div class="login_modal" title="Login required">
-  <div>You should login if you want save or load game</div>
-  <hr/>
-  <form class="login">
-    <div class="input">
-      <label for="email">Email</label>
-      <input id="email" type="text" name="email"/>
-      <br/>
-      <label for="password">Password</label>
-      <input id="password" type="password" name="password"/>
-    </div>
-    <div class="left">
-      <button id="form_login_button">Login</button>
-    </div>
-    <div class="right"><a href="/en/register" target="_blank">Register</a></div>
-  </form>
-  <hr/>
-  <p class="social">Social networks</p>
-  <div id="uLogin1" data-uloginid="fee955b6"></div>
-</div>
 
 <script type="text/javascript">
   function login(token) {
@@ -163,27 +116,7 @@ function () {
         }
     });
   }
-
-  $('#form_login_button').button();
-  $('#form_login_button')
-    .click(function () {
-      $.post("/xhr/login", {
-        'csrf-token': $("meta[name='csrf-token']").attr("content"),
-        email: $('#email').val(),
-        password: $('#password').val()
-      },
-      function (data) {
-        new Epicport.Login({ data: data });
-      })
-    .fail(function() {
-      Epicport.modalMessage("Invalid login or password", "Invalid login or password");
-    });
-
-    return false;
-  });
 </script>
-
-<script src="//ulogin.ru/js/ulogin.js"></script>
 
 </body>
 </html>
