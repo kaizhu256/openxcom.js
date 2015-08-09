@@ -2,8 +2,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link type="text/css" rel="stylesheet" href="app.css"/>
-
+<style>
+.openxcom canvas {
+  cursor: none;
+	width: 960px;
+	height: 600px;
+}
+</style>
 
 <script type="text/javascript" src="jquery-1.11.1.min.js"></script>
 <script type="text/javascript" src="jquery-ui.min.js"></script>
@@ -28,7 +33,6 @@
 <script type="text/javascript" src="canvas.js"></script>
 <script type="text/javascript" src="xcom.js"></script>
 <script type="text/javascript" src="api.js"></script>
-<script>new Epicport.Navbar();</script>
 
 <div class="canvas_container openxcom">
   <canvas id="canvas" oncontextmenu="event.preventDefault()"></canvas>
@@ -47,20 +51,6 @@
     </div>
 
   </div>
-</div>
-
-
-<div class="select-file-dialog dialog" title="Select file">
-  <p class="label">
-    Select file
-    <ul class="select-file-dialog-saves">
-      <span>No saved games found</span>
-    </ul>
-  </p>
-  <p class="select-file-input">
-    <label for="select-file-dialog-file">Enter file name</label>
-    <input id="select-file-dialog-file" type="text" value="New Game" />
-  </p>
 </div>
 
 <script type="text/javascript">
