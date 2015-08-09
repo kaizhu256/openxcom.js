@@ -1,0 +1,213 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Guryanov Aleksander">
+    <meta name="description" content="Browser version of classic game Caesar III. Here you can play in this game online.">
+    <meta name="keywords" content="caesar,caesar 3,caesar III,browser,online,play,game" />
+
+    <title>Caesar III - Online (browser version)</title>
+
+    <link rel="alternate" hreflang="ru" lang="ru" href="/ru/caesar3"/>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="/v2/css/bootstrap.min.css?eOf5HAxMykFeBoNiaqI5JQ" rel="stylesheet">
+
+    <link href="/v2/css/game-description.css?b0JPqLj4NHRmeV2gYYU83Q" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="/v2/font-awesome-4.2.0/css/font-awesome.min.css?_tqXSnfqV4O4vmc_FCt8iA" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link type="text/css" rel="stylesheet" media="all" href="/js/colorbox/colorbox.css?ddOjwI4UW70FUDuFZe4dIA"/>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" itemscope itemtype="http://schema.org/VideoGame">
+
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/en">Epicport</a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Caesar III</a></li>
+          <li ><a href="/en">More games</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active"><a href="/en/caesar3">English</a></li>
+          <li class=""><a href="/ru/caesar3">Russian</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+  <!-- Intro Header -->
+  <header>
+    <div class="container">
+      <h1 itemprop="name">Caesar III - Online (browser version)</h1>
+      <div class="section-divider"></div>
+    </div>
+  </header>
+
+  <!-- Sidebar -->
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3">
+          <img class="icon" src="/v2/img/caesar-icon-50x50.png?BGU7JBHDqU9V4PJgpl7XHA" alt="Logo" draggable="false"><br><br>
+          <a href="/en/caesar3/browser" class="btn btn-primary btn-lg">Play online</a><br><br>
+       
+          <!--noindex-->
+          <div>
+            <div class="yashare-auto-init" data-yashareL10n="en" data-yashareType="small" data-yashareQuickServices="vkontakte,facebook,twitter,odnoklassniki,moimir,gplus" data-yashareTheme="counter"></div>
+          </div>
+          <!--/noindex-->
+
+          <br>
+
+          <div>
+                      </div>
+          <br>
+          Category <span class="color-gray">Games / Strategy</span><br>
+          Age rating <span itemscope itemtype="http://schema.org/AggregateRating" itemprop="aggregateRating" class="color-gray">+<b itemprop="ratingValue">0</b></span><br>
+          Approximate download size <span class="color-gray"><strong><span itemprop="fileSize">38</span> Mb</strong></span><br>
+          Platform <span class="color-gray" itemprop="gamePlatform">Browser</span><br>
+
+          <meta itemprop="playMode" content=" SinglePlayer" >
+
+          <br>
+
+          <h4>More games</h4>
+
+          <div class="section-divider other-game-section-divider"></div>
+
+                      <div class="other-game">
+              <img class="icon" src="/v2/img/dune2-icon-50x50.png?9Io2Eo77VxOQ0eYoe7D2YA" alt="Logo" draggable="false">
+              <a class="page-scroll" href="/en/dune2"><strong>Dune 2 - Browser</strong></a>
+            </div>
+                      <div class="other-game">
+              <img class="icon" src="/v2/img/dune2-icon-50x50.png?9Io2Eo77VxOQ0eYoe7D2YA" alt="Logo" draggable="false">
+              <a class="page-scroll" href="/en/dune2/android"><strong>Dune 2 - Android</strong></a>
+            </div>
+                      <div class="other-game">
+              <img class="icon" src="/v2/img/openttd-icon-50x50.png?GDX31iDxbHcZBItYOAyE9g" alt="Logo" draggable="false">
+              <a class="page-scroll" href="/en/ttd"><strong>TTD</strong></a>
+            </div>
+                      <div class="other-game">
+              <img class="icon" src="/v2/img/xcom-icon-50x50.png?XBxyJZkjI2CdpGQ9oXg1hA" alt="Logo" draggable="false">
+              <a class="page-scroll" href="/en/xcom"><strong>X-Com</strong></a>
+            </div>
+                  </div>
+        <div class="col-sm-9">
+            <div class="main-image">
+              <img src="/v2/img/caesar-main-image.jpg?sOpINT6jRbpHXt8fTqCvzA" alt="Main image" class="img-responsive" draggable="false" itemprop="image">
+            </div>
+
+            <div class="screenshots">
+                              <a class="colorbox" href="/caesaria/00.jpg?E7w-BhZi-5dh-SotX63Lmg" rel="nofollow" itemprop="screenshot">
+                  <img class="small-image" src="/caesaria/00_small.jpg?bESoeGqbBf37noa4WYTmWQ" alt="screenshot" itemprop="thumbnail">
+                </a>
+                              <a class="colorbox" href="/caesaria/01.jpg?yg7rHDTgL1M38ernkIuc8g" rel="nofollow" itemprop="screenshot">
+                  <img class="small-image" src="/caesaria/01_small.jpg?eQOow-VxjJ-7y2Eqyn50Mg" alt="screenshot" itemprop="thumbnail">
+                </a>
+                              <a class="colorbox" href="/caesaria/02.jpg?DwbJVcsNULuzUGkerGSCIg" rel="nofollow" itemprop="screenshot">
+                  <img class="small-image" src="/caesaria/02_small.jpg?jO4vk6TkxnfTv9zvqzglDw" alt="screenshot" itemprop="thumbnail">
+                </a>
+                              <a class="colorbox" href="/caesaria/03.jpg?OjlLL9dwD6k0p3OPnz0X-g" rel="nofollow" itemprop="screenshot">
+                  <img class="small-image" src="/caesaria/03_small.jpg?PDsvF1q6D7tN2fQoyeHD3A" alt="screenshot" itemprop="thumbnail">
+                </a>
+                          </div>
+
+            <h2>Description</h2>
+
+            <div class="adsense">
+              <ins class="adsbygoogle"
+                   style="display:block"
+                   data-ad-client="ca-pub-9186880238664597"
+                   data-ad-slot="2592254161"
+                   data-ad-format="auto"></ins>
+            </div>
+            <br>
+
+            <div class="game-description" itemprop="description">
+              Original classic game Caesar III was ported to many platforms, and now it is ported to work in browser.<br/><br/>This version of the game appeared thanks to the open source project <!--noindex--><a href='https://bitbucket.org/dalerank/caesaria/wiki/Home'>Caesaria</a><!--/noindex--> which maintained by dalerank.
+            </div>
+
+            <p class="text-right">
+              <a href="/en/caesar3/browser" class="btn btn-default btn-lg">Play online</a>
+            </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="section-divider"></div>
+      <div class="footer-content">
+        <a href="http://www.linkedin.com/pub/aleksander-guryanov/3b/738/734">Guryanov Aleksander</a>, 2015
+      </div>
+    </div>
+  </footer>
+
+  <!-- Yandex -->
+  <script type="text/javascript" src="//yastatic.net/share/share.js" charset="utf-8" defer></script>
+
+  <!-- jQuery -->
+  <script src="/v2/js/jquery.js?PJE32IoAsa4LQf9qcFcWFQ" defer></script>
+
+  <!-- Bootstrap Core JavaScript -->
+  <script src="/v2/js/bootstrap.min.js?KBzVDdn1jFVQYg_BSKe8OQ" defer></script>
+
+  <!-- Colorbox -->
+  <script src="/js/colorbox/jquery.colorbox-min.js" defer></script>
+  <script type="text/javascript">
+    setTimeout(function() {
+      $("a.colorbox").colorbox({ rel: 'screenshots' })  ;
+    }, 3000);    
+  </script>
+
+
+  <script src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" defer></script>     
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+
+  
+    <!-- Yandex.Metrika counter --><script type="text/javascript">(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter23247073 = new Ya.Metrika({id:23247073, webvisor:true, clickmap:true, trackLinks:true, accurateTrackBounce:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="//mc.yandex.ru/watch/23247073" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
+
+  
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-46144566-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>

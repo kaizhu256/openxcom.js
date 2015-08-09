@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Guryanov Aleksander">
+    <meta name="description" content="This site is all about the greatest classic games. Now you can play Dune 2, XCOM, Transport Tycoon Deluxe, Caesar III online in your browser. You can start right now - you don't even need to register on our website.">
+    <meta name="keywords" content="online games,ufo,xcom,dune,dune 2,Transport Tycoon,Tycoon,Caesar,Caesar III" />
+
+    <title>Free online games</title>
+
+    <link rel="alternate" hreflang="ru" lang="ru" href="/ru"/>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="/v3/build/I18NRoot.bundle.css?DzEooVMfsMQyh94Idsv35A" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+        <script src="v3/bower_components/html5shiv/dist/html5shiv.min.js"></script>
+    <![endif]-->
+
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+    </style>
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" data-ng-app="dos-catalog">
+
+  <div class="navbar navbar-default navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="brand" href="#">Epicport</a>
+        <div class="nav-collapse collapse">
+          <ul class="nav">
+            <li class="active"><a href="#">Games</a></li>
+          </ul>
+          <ul class="nav pull-right">
+            <li class="active"><a href="/en">English</a></li>
+            <li class=""><a href="/ru">Russian</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+  </div>
+
+  <div class="container" data-ng-controller="CatalogController as catalog">
+    <div class="hero-unit">
+      <h1>Welcome!</h1><br/><p>On this site you can play in great games in your browser. You can choose one of the available games and run it in browser. If you want add one or more games to this site, then fill issue on <a href='https://github.com/caiiiycuk/epicport'>our github page</a>.</p>
+    </div>
+
+    <div class="row">
+      <div class="span12">
+        <label>Filter:&nbsp;</label>
+        <input type="text"  placeholder="Type game name" data-ng-model="catalog.filterPhrase" data-ng-change="catalog.filter()"/>
+      </div>
+    </div>
+
+    <br/>
+
+    <div class="row">
+      <div class="span4" data-ng-show="catalog.games[0].show" itemscope itemtype="http://schema.org/VideoGame">
+        <meta itemprop="playMode" content=" SinglePlayer" >
+        <h2 itemprop="name"><a href="/en/dune2" style="color: #333;">Dune 2 - Browser</a></h2>
+        <p>
+        <img src="/v2/img/dune2-main-image.jpg?ETPCp8xVyBw2xfm3LzmsQw" alt="Dune 2 - Browser screenshot" class="img-responsive" draggable="false" itemprop="image"></p>
+        <p itemprop="description">Dune II is a world first: a blend of arcade action and strategy which successfully caters for all tastes. There are fierce battles to be taught on the desert planet Arrakis, the only source of the life-prolonging substance Spice.</p>
+        <br/>
+        <p><a class="btn btn-primary" href="/en/dune2">Dune 2 in browser</a></p>
+      </div>
+      <div class="span4" data-ng-show="catalog.games[1].show" itemscope itemtype="http://schema.org/VideoGame">
+        <meta itemprop="playMode" content=" SinglePlayer" >
+        <h2 itemprop="name"><a href="/en/dune2/android" style="color: #333;">Dune 2 - Android</a></h2>
+        <p>
+        <img src="/v2/img/dune2-android-main-image.jpg?d8L7qOyjIasALbdwoRAvXA" alt="Dune 2 - Android screenshot" class="img-responsive" draggable="false" itemprop="image"></p>
+        <p itemprop="description">Dune II is a world first: a blend of arcade action and strategy which successfully caters for all tastes. There are fierce battles to be taught on the desert planet Arrakis, the only source of the life-prolonging substance Spice.</p>
+        <br/>
+        <p><a class="btn btn-primary" href="/en/dune2/android">Android version</a></p>
+      </div>
+      <div class="span4" data-ng-show="catalog.games[2].show" itemscope itemtype="http://schema.org/VideoGame">
+        <meta itemprop="playMode" content=" SinglePlayer" >
+        <h2 itemprop="name"><a href="/en/ttd" style="color: #333;">TTD</a></h2>
+        <p>
+        <img src="/v2/img/ttd-main-image.jpg?aJ5MrK5EQdy0RNMe8KQuxQ" alt="TTD screenshot" class="img-responsive" draggable="false" itemprop="image"></p>
+        <p itemprop="description">Make lots of money. Build complex road-rail-air-sea routes and shift cargo or passengers through the best routes. Chase trains, boats and planes on massive worlds; all against a background of cut-throat business rivalry.</p>
+        <br/>
+        <p><a class="btn btn-primary" href="/en/ttd">TTD in browser</a></p>
+      </div>
+    </div>
+    <br/>
+    <div class="row">
+      <div class="span4" data-ng-show="catalog.games[3].show" itemscope itemtype="http://schema.org/VideoGame">
+        <meta itemprop="playMode" content=" SinglePlayer" >
+        <h2 itemprop="name"><a href="/en/xcom" style="color: #333;">X-Com</a></h2>
+        <p>
+        <img src="/v2/img/xcom-main-image.jpg?oauZL5JPVRc8eQ5leTJBsQ" alt="X-Com screenshot" class="img-responsive" draggable="false" itemprop="image"></p>
+        <p itemprop="description">You are in control of X-COM: an organization formed by the world's governments to fight the ever-increasing alien menace. Features: command deadly close-combat battles; research and manufacture alien technologies; develop a strategy to save the Earth.</p>
+        <br/>
+        <p><a class="btn btn-primary" href="/en/xcom">X-Com in browser</a></p>
+      </div>
+      <div class="span4" data-ng-show="catalog.games[4].show" itemscope itemtype="http://schema.org/VideoGame">
+        <meta itemprop="playMode" content=" SinglePlayer" >
+        <h2 itemprop="name"><a href="/en/caesar3" style="color: #333;">Caesar III</a></h2>
+        <p>
+        <img src="/v2/img/caesar-main-image.jpg?sOpINT6jRbpHXt8fTqCvzA" alt="Caesar III screenshot" class="img-responsive" draggable="false" itemprop="image"></p>
+        <p itemprop="description">Caesar is a city-building computer game where the player undertakes the role of a Roman governor, building ancient Roman cities.The game has quite graphics and simple user interfaces. Gameplay came with issues of micromanagement, including complicated city-planning requirements such as building the right number of schools, theaters, libraries, bathhouses, and other amenities, within suitable distances of residential areas.</p>
+        <br/>
+        <p><a class="btn btn-primary" href="/en/caesar3">Caesar III in browser</a></p>
+      </div>
+    </div>
+    <br/>
+    <hr>
+    <footer>
+      <a href="http://linkedin.com/pub/aleksander-guryanov">Guryanov Aleksander</a>, 2015  
+    </footer>
+  </div>
+
+  <script type="text/javascript">
+    function onAngularReady() {
+      angular.module('dos-catalog', [])
+        .controller('CatalogController', [function() {
+                        this.games = [{ fts: angular.lowercase("2 dune дюна dune2 дюна2 dune 2 дюна 2"), show: true },{ fts: angular.lowercase("2 dune дюна dune2 дюна2 Dune 2 - Android Dune II is a world first: a blend of arcade action and strategy which successfully caters for all tastes. There are fierce battles to be taught on the desert planet Arrakis, the only source of the life-prolonging substance Spice."), show: true },{ fts: angular.lowercase("transport tycoon deluxe транспортный магнат TTD Make lots of money. Build complex road-rail-air-sea routes and shift cargo or passengers through the best routes. Chase trains, boats and planes on massive worlds; all against a background of cut-throat business rivalry."), show: true },{ fts: angular.lowercase("xcom x-com ufo enemy unknown X-Com You are in control of X-COM: an organization formed by the world's governments to fight the ever-increasing alien menace. Features: command deadly close-combat battles; research and manufacture alien technologies; develop a strategy to save the Earth."), show: true },{ fts: angular.lowercase("caesar цезарь Caesar III Caesar is a city-building computer game where the player undertakes the role of a Roman governor, building ancient Roman cities.The game has quite graphics and simple user interfaces. Gameplay came with issues of micromanagement, including complicated city-planning requirements such as building the right number of schools, theaters, libraries, bathhouses, and other amenities, within suitable distances of residential areas."), show: true }];
+            this.show = true;
+            this.filterPhrase = "";
+            this.filter = function() {
+              var phrase = angular.lowercase(this.filterPhrase);
+              angular.forEach(this.games, function(value, key) {
+                value.show = value.fts.indexOf(phrase) > -1 || phrase.length == 0;
+              });
+            }
+          }]);
+    };
+  </script>
+
+  <script src="/v3/build/I18NRoot.bundle.js?KH-gNgLKV6998u4sR4pQSQ" defer></script>
+
+  
+    <!-- Yandex.Metrika counter --><script type="text/javascript">(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter23247073 = new Ya.Metrika({id:23247073, webvisor:true, clickmap:true, trackLinks:true, accurateTrackBounce:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="//mc.yandex.ru/watch/23247073" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
+
+  
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-46144566-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>
