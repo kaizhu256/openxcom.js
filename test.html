@@ -2,10 +2,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link type="text/css" rel="stylesheet" media="all" href="/css/960/reset.css"/>
-<link type="text/css" rel="stylesheet" media="all" href="/css/960/text.css"/>
-<link type="text/css" rel="stylesheet" media="all" href="/css/960/960.css"/>
-<link type="text/css" rel="stylesheet" media="all" href="/css/Aristo/Aristo.css"/>
 <link type="text/css" rel="stylesheet" media="all" href="/css/app.css"/>
 <link type="text/css" rel="stylesheet" media="all" href="/js/colorbox/colorbox.css"/>
 
@@ -76,46 +72,19 @@
 ["-useOpenGL", "false", "-asyncBlit", "false", "-vSyncForOpenGL", "false", "-useOpenGLSmoothing", "false", "-mute", "false", "-playIntro", "true", "-language", "en", "-displayWidth", "960", "-displayHeight", "600"]
 ,
     preRun:
-function () {
-//  Module['FS_createFolder']('/', 'home', true, true);
-  Module['FS_createFolder']('/home', 'emscripten', true, true);
-  Module['FS_createFolder']('/home/emscripten', '.openxcom', true, true);
-  Module['FS_createFolder']('/home/emscripten', '.config', true, true);
-  Module['FS_createFolder']('/home/emscripten/.config', '.openxcom', true, true);
-}
-,
-    start:
-function () {
-  var preventUpDown = function (e) {
-    if (e.keyCode === 38 || e.keyCode === 40) {
-      e.preventDefault();
-    }
-  }
-
-  document.addEventListener("keydown", preventUpDown);
-  document.addEventListener("keyup", preventUpDown);
-  document.addEventListener("keypress", preventUpDown);
-
-  var xcom = new Epicport.XCOM();
-  xcom.start();
-}
+      function () {
+      //  Module['FS_createFolder']('/', 'home', true, true);
+        Module['FS_createFolder']('/home', 'emscripten', true, true);
+        Module['FS_createFolder']('/home/emscripten', '.openxcom', true, true);
+        Module['FS_createFolder']('/home/emscripten', '.config', true, true);
+        Module['FS_createFolder']('/home/emscripten/.config', '.openxcom', true, true);
+      }
 ,
     js: '/js/openxcom.js'
   });
   var Module = Epicport.API.module();
-</script>
-
-<script type="text/javascript">
-  function login(token) {
-    $.getJSON("//ulogin.ru/token.php?host=" + encodeURIComponent(location.toString()) + "&token=" + token + "&callback=?", function(data) {
-        data = $.parseJSON(data.toString());
-        if (!data.error) {
-          new Epicport.Login({ data: data });
-        } else {
-          Epicport.modalMessage("Invalid login or password", data.error);
-        }
-    });
-  }
+  var xcom = new Epicport.XCOM();
+  xcom.start();
 </script>
 
 </body>
