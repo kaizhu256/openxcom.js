@@ -29,30 +29,11 @@
   };
 </script>
 
-<script type="text/javascript" src="index.js"></script>
 
 <div class="canvas_container openxcom">
   <canvas id="canvas" oncontextmenu="event.preventDefault()"></canvas>
 </div>
 
-<script type="text/javascript">
-  Epicport.API = new Epicport.API({
-    game: "openxcom",
-    arguments: ["-useOpenGL", "false", "-asyncBlit", "false", "-vSyncForOpenGL", "false", "-useOpenGLSmoothing", "false", "-mute", "false", "-playIntro", "true", "-language", "en", "-displayWidth", "960", "-displayHeight", "600"],
-    preRun:
-      function () {
-      //  Module['FS_createFolder']('/', 'home', true, true);
-        Module['FS_createFolder']('/home', 'emscripten', true, true);
-        Module['FS_createFolder']('/home/emscripten', '.openxcom', true, true);
-        Module['FS_createFolder']('/home/emscripten', '.config', true, true);
-        Module['FS_createFolder']('/home/emscripten/.config', '.openxcom', true, true);
-      },
-    js: 'openxcom.js'
-  });
-  var Module = Epicport.API.module();
-  var xcom = new Epicport.XCOM();
-  xcom.start();
-</script>
-
+<script type="text/javascript" src="index.js"></script>
 </body>
 </html>
